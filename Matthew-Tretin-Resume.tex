@@ -1,153 +1,164 @@
 \documentclass[11pt]{article}
-\usepackage{fancyhdr}
 
-\usepackage[letterpaper,top=1in, bottom=1.5in, outer=1in, inner=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage[letterpaper,top=1in, bottom=1in, outer=1in, inner=1in]{geometry}
 \usepackage[dvipsnames]{xcolor}
-\usepackage{vwcol}  
+\usepackage{vwcol}
+\usepackage{quoting}
+\quotingsetup{vskip=0pt}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage{tabularx}
 
 \pagestyle{fancyplain}
 
-\setlength\headheight{57pt}
+\setlength\headheight{43.28pt}
+\setlength\headsep{5pt}
 \setlength\parindent{0pt}
+\setlength\multicolsep{0pt}
 
-\newcommand{\job}[5]{
-  %% #1 start date 
-  %% #2 end date
-  %% #3 company name
-  %% #4 role 
-  %% #5 description 
-  \begin{tabular}{l|l}
-    #1 - #2 & #3 \\
-  \end{tabular}
-  \begin{quotation}
-    \noindent\textit{#4}
-  \end{quotation}
-  \begin{quotation}
-    \noindent#5
-  \end{quotation} 
-}
-
-\newcommand{\project}[2]{
-  %% #1 project name
-  %% #2 description
-  \begin{quotation}
-    {\small\noindent\textit{#1}}
-    \begin{quotation}
-      {\small\noindent#2}
-    \end{quotation}
-  \end{quotation}
-}
-
-\newcommand{\pendingpatent}[2]{
-  %% #1 patent #
-  %% #2 description
-  \begin{quotation}
-    {\small\noindent#1 - #2}\\
-    {\tiny Application pending.}
-  \end{quotation}
-}
-
+%%
+%% Header 
+%%
 \fancyhead[L]{
   \begin{tabular}{l}
     \textcolor{Mahogany}{\texttt{matt@tretin.net}}\\
     \textcolor{MidnightBlue}{203.247.0623}\\
     \\
-    \\
   \end{tabular}
 }
-
 \fancyhead[C]{
   \begin{tabular}{c}
     \\
     \textcolor{Black}{\textbf{{\LARGE Matt Tretin}}}\\
     \\
-    \\
   \end{tabular}
 }
-
 \fancyhead[R]{
   \begin{tabular}{r}
-    \textcolor{Black!80}{123 East $82^{\mbox{nd}}$ St.}\\
-    \textcolor{Black!80}{Apt 3D}\\
-    \textcolor{Black!80}{New York NY, 10028}\\
-    \\
+    123 East $82^{\mbox{nd}}$ St.\\
+    Apt. 3D\\
+    New York NY, 10028\\
+    %% \textcolor{Black!80}{123 East $82^{\mbox{nd}}$ St.}\\
+    %% \textcolor{Black!80}{Apt 3D}\\
+    %% \textcolor{Black!80}{New York NY, 10028}\\
   \end{tabular}
 }
 
 \begin{document}
+%%
+%% Personal Statemenet 
+%%
+I'm an experienced (10+ years) engineering manager, systems
+architecht, technical lead and software engineer. I specialize in
+greenfield development, innovation, microservice architectures and
+online video distribution systems. I believe engineering is a
+dicipline driven by making decisions based on data.
+\vspace{5pt}
 
-\begin{quotation}
-  \noindent I'm an experienced (10+ years) software engineer, systems architect,
-  technical lead and engineering manager. I specialize in greenfield
-  development, innovation, microservice architectures and online video
-  distribution systems.
-\end{quotation}
+%%
+%% Patents 
+%%
+\textbf{Patents}
+\begin{itemize}[nosep,label=-,leftmargin=*]
+\item TK USPTO 16/040,900 - Systems \& Methods for Securely Generating Live Previews
+\item TK USPTO 16/138,604 - Systems \& Methods for Generating Individualized Playlists
+\item TK USPTO 16/138,604 - Systems \& Methods for Generating Individualized Playlists
+\item TK USPTO 16/138,604 - Systems \& Methods for Generating Individualized Playlists\\{\tiny Pending}
+\end{itemize}
+  
+    
+\vspace{5pt}
 
-\noindent Patents:
+%%
+%% Roles 
+%%
+\textbf{Roles}
 
-\pendingpatent{USPTO 16/040,900}{Systems \& Methods for Securely Generating Live
-  Previews}
+%%
+%% IAS 
+%%
+\begin{tabularx}{\textwidth}{@{}llXr}
+  Sept 2018 - Present & \textcolor{Mahogany}{Integral Ad Science} && \textcolor{MidnightBlue}{OTT Team Lead \& Manager}\\
+  &&&\textcolor{MidnightBlue}{OTT Team Lead \& Manager}
+\end{tabularx}
+Technical lead and manager of the OTT video ad-beacon measurement team.
+\begin{multicols}{2}
+  \begin{itemize}[nosep,label=-,leftmargin=*]
+  \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf
+  \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf
+  \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf
+  \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf
+  \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf
+  \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf 
+  \end{itemize}
+\end{multicols}
+\vspace{5pt}
 
-\pendingpatent{USPTO 16/138,604}{Systems \& Methods for Generating
-  Individualized Playlists}
+%%
+%% Fubo TV 
+%%
+%%\job{Mar 2018}{Oct 2018}{FuboTV}{Research \& Innovation Engineer}{The Research \&
+%%  Innovation team focused on rapidly implementing complex tactical projects and
+ %% working with patent attorneys to document and pursue protections for core
+%% %%  parts of FuboTV’s IP.}
+%% \begin{quoting}
+%%   \begin{multicols}{2}
+%%     \begin{itemize}[topsep=\parskip]
+%%     \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf
+%%     \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf
+%%     \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf
+%%     \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf
+%%     \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf
+%%     \item Alkasdjfa;lksdjf ;alsdjkf a;lskjdf 
+%%     \end{itemize}
+%%   \end{multicols}
+%% \end{quoting}
 
-\noindent Roles:
-\vspace{.1in}
+%% \job{Oct 2016}{March 2018}{FuboTV}{Video Technical Lead \& Team Manager}{I was the
+%%   first hire to start working on FuboTV’s OTT video ingest and distribution
+%%   infrastructure. As the chief-architect and lead engineer I did initial rounds
+%%   of coding myself over a frenzied rush of 16 hour days, eventually building out
+%%   3 teams underneath me totaling 18 engineers and 7 direct reports. These
+%%   systems support the international distribution of over 1,500 video streams to
+%%   as many as 500,000 concurrent users, full cloud based DVR functionality, and
+%%   support for SCTE224/35 switching for networks with a dynamic topology.}
 
-\job{Sept 2018}{Present}{Integral Ad Science}{OTT Team Lead}{Helping build the
-  next generation of ad-measurement solutions.}
+%% \job{Jun 2015}{Aug 2016}{Perka}{Software Engineer}{I was part of the team
+%%   responsible for maintenance and design of stable, performant, mission critical
+%%   backend systems. My work focused on finding a safe way to migrate all
+%%   production data from a custom relational data system built on top of Cassandra
+%%   to PostgreSQL.}
 
-\job{Mar 2018}{Oct 2018}{FuboTV}{Research \& Innovation Engineer}{The Research \&
-  Innovation team focused on rapidly implementing complex tactical projects and
-  working with patent attorneys to document and pursue protections for core
-  parts of FuboTV’s IP.}
+%% \job{Jan 2015}{March 2015}{ESPN}{Data Platforms \& Architecture - Development
+%%   Engineer}{Data Platforms \& Architecture group was responsible for the design,
+%%   implementation, maintenance, and ongoing operation of production APIs
+%%   leveraging a diverse set technologies meant to increase the efficacy of human
+%%   users (butts-in-chairs) during the lifecycle of content creation and
+%%   distribution both in-house and from remote locations.}
 
-\job{Oct 2016}{March 2018}{FuboTV}{Video Technical Lead \& Team Manager}{I was the
-  first hire to start working on FuboTV’s OTT video ingest and distribution
-  infrastructure. As the chief-architect and lead engineer I did initial rounds
-  of coding myself over a frenzied rush of 16 hour days, eventually building out
-  3 teams underneath me totaling 18 engineers and 7 direct reports. These
-  systems support the international distribution of over 1,500 video streams to
-  as many as 500,000 concurrent users, full cloud based DVR functionality, and
-  support for SCTE224/35 switching for networks with a dynamic topology.}
+%% \job{Oct 2010}{Jan 2015}{ESPN}{Technology Innovation Team - Associate
+%%   Development Engineer}{The Innovation Group's charter was to prototype a vision
+%%   of how ESPN might look 3-5 years out by pushing current technologies to their
+%%   absolute limit. Consider ESPN a factory for data about sports rather than a TV
+%%   network. That data comes in many forms: 24x7 live-linear streams, clips,
+%%   shows, web pages, database tables, etc. The innovation team devised new ways
+%%   of connecting these disparate sources of data to create compelling end-user
+%%   experiences and new capabilities for in house tooling.}
 
-\job{Jun 2015}{Aug 2016}{Perka}{Software Engineer}{I was part of the team
-  responsible for maintenance and design of stable, performant, mission critical
-  backend systems. My work focused on finding a safe way to migrate all
-  production data from a custom relational data system built on top of Cassandra
-  to PostgreSQL.}
+%% \job{Jan 2008}{Dec 2009}{Peak Systems}{Technician}{Provided on-site
+%%   troubleshooting and repair for desktop PC systems (hardware), 3rd-party
+%%   software, Microsoft Products, networking, etc. for secure data entry
+%%   facilities on air-gapped networks.}
 
-\pagebreak 
-
-\job{Jan 2015}{March 2015}{ESPN}{Data Platforms \& Architecture - Development
-  Engineer}{Data Platforms \& Architecture group was responsible for the design,
-  implementation, maintenance, and ongoing operation of production APIs
-  leveraging a diverse set technologies meant to increase the efficacy of human
-  users (butts-in-chairs) during the lifecycle of content creation and
-  distribution both in-house and from remote locations.}
-
-\job{Oct 2010}{Jan 2015}{ESPN}{Technology Innovation Team - Associate
-  Development Engineer}{The Innovation Group's charter was to prototype a vision
-  of how ESPN might look 3-5 years out by pushing current technologies to their
-  absolute limit. Consider ESPN a factory for data about sports rather than a TV
-  network. That data comes in many forms: 24x7 live-linear streams, clips,
-  shows, web pages, database tables, etc. The innovation team devised new ways
-  of connecting these disparate sources of data to create compelling end-user
-  experiences and new capabilities for in house tooling.}
-
-\job{Jan 2008}{Dec 2009}{Peak Systems}{Technician}{Provided on-site
-  troubleshooting and repair for desktop PC systems (hardware), 3rd-party
-  software, Microsoft Products, networking, etc. for secure data entry
-  facilities on air-gapped networks.}
-
-\job{Jan 2007}{Dec 2009}{University of Vermont}{Student Research
-  Assistant}{Research in social networks, complex systems, and automated
-  emotional classification of online text. We were the first team to measure the
-  happiness of Twitter in real time. The team's work was covered in the New York
-  Times and published as a letter to the journal Nature.}
+%% \job{Jan 2007}{Dec 2009}{University of Vermont}{Student Research
+%%   Assistant}{Research in social networks, complex systems, and automated
+%%   emotional classification of online text. We were the first team to measure the
+%%   happiness of Twitter in real time. The team's work was covered in the New York
+%%   Times and published as a letter to the journal Nature.}
 
 \noindent Education:
-\vspace{.1in}
 
 \begin{tabular}{lll}
   2006 - 2010 & University of Vermont & Computer Science \& Philosophy\\
