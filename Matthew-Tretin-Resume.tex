@@ -21,41 +21,35 @@
 %%
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead[L]{
-  \begin{tabular}{l}
-    \\
+  \begin{tabular}{@{}l}
     \textcolor{Mahogany}{matt@tretin.net}\\
-    \textcolor{MidnightBlue}{203.247.0623}\\
+    \textcolor{MidnightBlue}{203.247.0623}
   \end{tabular}
 }
 \fancyhead[C]{
   \begin{tabular}{c}
-    \\
-    \textcolor{Black}{\textbf{{\LARGE Matt Tretin}}}\\
-    \\
+    \textcolor{Black}{\textbf{{\LARGE Matt Tretin}}}
   \end{tabular}
 }
 \fancyhead[R]{
-  \begin{tabular}{r}
+  \begin{tabular}{r@{}}
     123 East 82$^{\mbox{nd}}$ St.\\
     Apt. 3D\\
-    New York NY, 10028\\
-    %% \textcolor{Black!80}{123 East $82^{\mbox{nd}}$ St.}\\
-    %% \textcolor{Black!80}{Apt 3D}\\
-    %% \textcolor{Black!80}{New York NY, 10028}\\
+    New York NY, 10028
   \end{tabular}
 }
-
 \begin{document}
 %%
 %% Personal Statement 
 %%
 I'm an experienced (10+ years) engineering manager, systems
-architect, technical lead and software engineer. I specialize in
+architect, technical lead and software \mbox{engineer}. I specialize in
 greenfield development, innovation, micro-service architectures and
 online video distribution systems. I believe engineering is a
 discipline driven by making decisions based on data.
-
-\textit{Seeking director and management level roles. References available upon request.}
+\\
+\\
+\textit{Seeking director and manager level roles. References available upon request.}
 
 %%
 %% Patents 
@@ -110,11 +104,11 @@ discipline driven by making decisions based on data.
 
 \vspace{3pt} I manage 3 engineering teams of 4-6 people each and report directly to the VP of Engineering. My teams are responsible for
 all transcoding, video streaming, and ad insertion operations.
-\begin{multicols}{2}
+\vspace{3pt}\begin{multicols}{2}
   \begin{small}
     \begin{itemize}[leftmargin=*,label=\tiny{$\bullet$}]
-    \item\begin{minipage}[t]{\linewidth}{Design and PoC of next-generation CMAF video ingestion workflow and JIT packaging workflow.
-        Designed DRM, 4K, and multi-ABR ladder solutions.}\end{minipage}
+    \item\begin{minipage}[t]{\linewidth}{Design and PoC of next-generation CMAF video ingestion workflow and JIT packaging workflow.}\end{minipage}
+    \item\begin{minipage}[t]{\linewidth}{Designed DRM, 4K, and multi-ABR ladder solutions.}\end{minipage}
     \item\begin{minipage}[t]{\linewidth}{Designed and launched new way to serve VOD assets with HLS. The company sought a patent on this work.}\end{minipage}
     \item\begin{minipage}[t]{\linewidth}{Introduced StatsD and SignalFX to monitor all video services 24/7. Setup monitoring
         and alerting with PagerDuty.}\end{minipage}
@@ -134,14 +128,14 @@ all transcoding, video streaming, and ad insertion operations.
 %%
 %% Integral Ad Science (IAS) 
 %%
-\vspace{15pt}\begin{tabularx}{\textwidth}{@{}lllXr}
+\vspace{15pt}\begin{tabularx}{\textwidth}{@{}lllXr@{}}
   Sep. 2018 - Apr. 2019&\textcolor{Mahogany}{Integral Ad Science}&\textcolor{Black!80}{New York, NY}&&
   \begin{minipage}[t]{1.9in}{\textcolor{MidnightBlue}{Team Lead \& Manager OTT Measurement}}\end{minipage}
 \end{tabularx}
 
 \vspace{3pt} I managed a team of 6 engineers reporting to a Director of Engineering. My team was responsible for designing, building, and
 launching IAS's OTT ad-verification and measurement solution. 
-\begin{multicols}{2}
+\vspace{3pt}\begin{multicols}{2}
   \begin{small}
     \begin{itemize}[leftmargin=*,label=\tiny{$\bullet$}]
     \item\begin{minipage}[t]{\linewidth}{Successfully applied agile principles to bring an out of control project on track to meet a hard customer deadline.}\end{minipage}
@@ -158,14 +152,16 @@ launching IAS's OTT ad-verification and measurement solution.
 %% FuboTV 
 %%
 \begin{tabularx}{\textwidth}{@{}lllXr}
-  Oct. 2016 - Sep. 2018&\textcolor{Mahogany}{FuboTV}&\textcolor{Black!80}{New York, NY}&&\textcolor{MidnightBlue!75}{Senior Software Engineer}\\
-  &&&&\textcolor{MidnightBlue}{\begin{minipage}[t]{2in}{Manager Video Quality, Switching/Signaling, Video Operations}\end{minipage}}\\
+  %%  Oct. 2016 - Sep. 2018&\textcolor{Mahogany}{FuboTV}&\textcolor{Black!80}{New York, NY}&&\textcolor{MidnightBlue!75}{Senior Software Engineer}\\
+  %%  &&&&\textcolor{MidnightBlue}{\begin{minipage}[t]{2in}{Manager Video Quality, Switching/Signaling, Video Operations}\end{minipage}}\\
+  Oct. 2016 - Sep. 2018&\textcolor{Mahogany}{FuboTV}&\textcolor{Black!80}{New York, NY}&&
+  \textcolor{MidnightBlue}{\begin{minipage}[t]{3in}{Manager Video Quality, Switching/Signaling, Video Operations}\end{minipage}}\\
+  %%\textcolor{MidnightBlue}{Manager Video Quality, \mbox{Switching}/Signaling, Video Operations}\\
 \end{tabularx}
 
 \vspace{3pt} I managed 3 teams of 4-8 engineers each reporting directly to the CTO. My teams were responsible for 24/7 ingestion and per-chunk indexing of
 over 1500 HLS video feeds, per-user playlist generation, mid-stream video switching, scheduling systems, and enforcing geofencing and blackout restrictions. 
-
-\begin{multicols}{2}
+\vspace{3pt}\begin{multicols}{2}
   \begin{small}
     \begin{itemize}[leftmargin=*,label=\tiny{$\bullet$}]
     \item\begin{minipage}[t]{\linewidth}{Was principal architect and lead engineer for all video services company wide.}\end{minipage}
@@ -194,7 +190,7 @@ over 1500 HLS video feeds, per-user playlist generation, mid-stream video switch
 \end{tabularx}
 
 \vspace{3pt} I was a senior software engineer on the backend team. I reported directly to a Team Lead \& Manager. The backend team was responsible for all server-side components of the application. 
-\begin{multicols}{2}
+\vspace{3pt}\begin{multicols}{2}
   \begin{small}
     \begin{itemize}[leftmargin=*,label=\tiny{$\bullet$}]
     \item\begin{minipage}[t]{\linewidth}{Re-factored and migrated all user management systems for a legacy code-base.}\end{minipage}
@@ -210,12 +206,12 @@ over 1500 HLS video feeds, per-user playlist generation, mid-stream video switch
 %% ESPN
 %%
 \vspace{15pt}\begin{tabularx}{\textwidth}{@{}lllXr}
-  September 2018 - April 2019&\textcolor{Mahogany}{ESPN}&\textcolor{Black!80}{Bristol, CT}&&\textcolor{MidnightBlue}{Associate Development Engineer}
+  Oct. 2010 - May 2015&\textcolor{Mahogany}{ESPN}&\textcolor{Black!80}{Bristol, CT}&&\textcolor{MidnightBlue}{Associate Development Engineer}
 \end{tabularx}
 
 \vspace{3pt} I was on the Technology \& Innovation team, I reported directly to an Associate Director of Engineering. The Technology \& Innovation team was tasked with short term strategic projects,
 innovation initiatives, and experimental projects to help asses the value of various kinds of new technologies. 
-\begin{multicols}{2}
+\vspace{3pt}\begin{multicols}{2}
   \begin{small}
     \begin{itemize}[leftmargin=*,label=\tiny{$\bullet$}]
     \item\begin{minipage}[t]{\linewidth}{Implemented a tool to visualize and compare any two umpires strike zones across any to points in time. This was turned into an on-air telestration tool.}\end{minipage}
@@ -241,7 +237,7 @@ innovation initiatives, and experimental projects to help asses the value of var
 
 \vspace{3pt} Research in social networks, complex systems, and automated  emotional classification of online text.
 We were the first team to measure the happiness of Twitter in real time. The team's work was covered in the New York Times and published as a letter to the journal Nature.
-\begin{multicols}{2}
+\vspace{3pt}\begin{multicols}{2}
   \begin{small}
     \begin{itemize}[leftmargin=*,label=\tiny{$\bullet$}]
     \item\begin{minipage}[t]{\linewidth}{Wrote data ingest system to perform sentiment analysis of Twitter fire-hose.}\end{minipage}
